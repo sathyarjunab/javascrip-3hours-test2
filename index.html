@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="productAdd(event)">
+      <label>
+        Selling price:
+        <input type="number" id="price" name="price" />
+      </label>
+      <label>
+        Product name:
+        <input type="text" id="name" name="name" />
+      </label>
+      <label>
+        Choose a category:
+        <select name="category" id="category">
+          <option value="Electronic">Electronic</option>
+          <option value="Food">Food</option>
+          <option value="Skincare">Skincare</option>
+        </select>
+      </label>
+      <button type="submit">submit</button>
+    </form>
+    <h1>Products</h1>
+    <h2>Electronic Items</h2>
+    <ul id="Electronics"></ul>
+    <h2>Food Items</h2>
+    <ul id="Food"></ul>
+    <h2>Skincare Items</h2>
+    <ul id="Skincare"></ul>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+  <script src="./index.js"></script>
+</html>
